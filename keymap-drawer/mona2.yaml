@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - F16
   - LEFT GUI
-  - {t: ENTER, h: '2'}
+  - '2'
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: '1'}
@@ -54,7 +54,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - '['
   - ']'
