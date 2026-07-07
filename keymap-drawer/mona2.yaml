@@ -97,11 +97,11 @@ layers:
   - KP 8
   - KP 9
   - KP EQUAL
-  - '`'
+  - BACKSPACE
   - '~'
   - '"'
-  - ''''
-  - {t: ▽, type: trans}
+  - Sft+SPACE
+  - KP ENTER
   - {t: ▽, type: trans}
   - KP MINUS
   - KP 4
@@ -112,7 +112,7 @@ layers:
   - F2
   - F3
   - F4
-  - F5
+  - DEL
   - LCTRL
   - F12
   - KP 0
