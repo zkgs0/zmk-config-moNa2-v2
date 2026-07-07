@@ -27,14 +27,14 @@ layers:
   - C
   - V
   - B
-  - F14
+  - ESC
   - LANG2
   - N
   - M
   - ','
   - .
   - RCTRL
-  - ESCAPE
+  - LALT
   - LEFT WIN
   - F16
   - LEFT GUI
@@ -53,10 +53,10 @@ layers:
   - '7'
   - '8'
   - '9'
-  - '0'
+  - \
   - TAB
-  - {t: ▽, type: trans}
   - '['
+  - ']'
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -64,7 +64,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - \
+  - ':'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -72,11 +72,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''''
+  - '"'
+  - '~'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '|'
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,23 +87,23 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   '2':
-  - '!'
+  - CAPS
   - '@'
   - '#'
   - $
   - '%'
-  - ^
+  - KP PLUS
   - KP 7
   - KP 8
   - KP 9
-  - _
+  - KP EQUAL
   - '`'
   - '~'
   - '"'
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB3'
+  - KP MINUS
   - KP 4
   - KP 5
   - KP 6
@@ -113,7 +113,7 @@ layers:
   - F3
   - F4
   - F5
-  - F11
+  - LCTRL
   - F12
   - KP 0
   - KP 1
