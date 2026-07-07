@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
+    - name: t-ogura    # <-- Prospector Scanner (status advertisement)
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +31,9 @@ manifest:
     - name: zmk-input-processor-keybind
       remote: zettaface
       revision: main
+    - name: prospector-zmk-module
+      remote: t-ogura
+      revision: v2.2.1
+      path: modules/prospector-zmk-module
   self:
     path: config
