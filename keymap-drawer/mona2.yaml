@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: _, h: '3'}
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -127,7 +127,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: _, h: '3'}
+  - '3'
   - {t: ▽, type: trans}
   '3':
   - {t: ▽, type: trans}
