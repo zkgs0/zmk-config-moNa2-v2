@@ -232,7 +232,7 @@ layers:
   - '&mkp MB1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 1
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
