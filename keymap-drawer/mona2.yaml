@@ -107,7 +107,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - +
+  - KP SLASH
   - F1
   - F2
   - F3
