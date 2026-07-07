@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - RCTRL
   - {t: ▽, type: trans}
   - '3'
   - {t: ▽, type: trans}
