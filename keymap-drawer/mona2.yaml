@@ -39,7 +39,7 @@ layers:
   - F16
   - LEFT GUI
   - {t: ENTER, h: '2'}
-  - {t: '&to_layer_0 LANG2', h: '3'}
+  - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: '1'}
   - LEFT ALT
@@ -119,7 +119,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - F10
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
