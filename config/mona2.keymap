@@ -98,10 +98,10 @@
 
         layer_2 {
             bindings = <
-&kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR     &kp PERCENT                         &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
-&kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER               &trans   &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH
-&kp F1         &kp F2       &kp F3             &kp F4         &kp DEL       &kp LCTRL    &kp F12  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp QUESTION
-&trans         &trans       &trans             &trans         &trans        &kp RCTRL    &trans   &mo 3                                                            &trans
+&kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR     &kp PERCENT                                &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
+&kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH
+&kp F1         &kp F2       &kp F3             &kp F4         &kp DEL       &kp LCTRL           &kp F12  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp QUESTION
+&trans         &trans       &trans             &trans         &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
