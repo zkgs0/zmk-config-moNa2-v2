@@ -39,7 +39,7 @@
         lctrl_combo {
             bindings = <&kp LCTRL>;
             key-positions = <21 22>;
-            layers = <1 2>;
+            layers = <0 2>;
             timeout-ms = <250>;
         };
     };
@@ -99,7 +99,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp BACKSLASH
 &kp TAB       &kp LBKT      &kp RBKT      &kp RIGHT_BRACKET  &trans                  &trans  &kp LEFT          &kp DOWN           &kp UP        &kp RIGHT     &kp COLON
 &trans        &trans        &trans        &trans             &trans        &trans    &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp TILDE     &trans        &kp SEMI
-&trans        &trans        &trans        &trans             &mo 3         &trans    &trans  &trans                                                           &trans
+&trans        &trans        &kp LCTRL     &trans             &mo 3         &trans    &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -110,7 +110,7 @@
 &kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR     &kp PERCENT                                &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
 &kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
 &kp F1         &kp F2       &kp F3             &kp LS(LG(V))  &kp DEL       &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
-&trans         &trans       &trans             &kp LCTRL      &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                   &trans
+&trans         &trans       &kp LCTRL          &trans         &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -140,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                    &trans           &trans     &trans     &trans     &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &kp KP_NUMBER_1  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans           &trans     &trans     &trans     &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                            &trans
+&trans  &trans    &trans    &trans    &trans                    &trans  &trans     &trans     &trans     &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
