@@ -35,6 +35,12 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        lctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <21 22>;
+            layers = <1 2>;
+        };
     };
 
     macros {
@@ -78,10 +84,10 @@
 
         default_layer {
             bindings = <
-&kp Q     &kp W         &kp E    &kp R         &kp T                                     &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A     &kp S         &kp D    &kp F         &kp G                          &kp LANG1  &kp H            &kp J  &kp K      &kp L    &kp MINUS
-&kp Z     &kp X         &kp C    &kp V         &kp B  &kp ESC                 &kp LANG2  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RCTRL
-&kp LALT  &kp LEFT_WIN  &kp F16  &kp LEFT_GUI  &mo 2  &mt LEFT_SHIFT SPACE    &kp ENTER  &lt 1 BACKSPACE                             &kp LEFT_ALT
+&kp Q     &kp W         &kp E      &kp R         &kp T                                     &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A     &kp S         &kp D      &kp F         &kp G                          &kp LANG1  &kp H            &kp J  &kp K      &kp L    &kp MINUS
+&kp Z     &kp X         &kp C      &kp V         &kp B  &kp ESC                 &kp LANG2  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RCTRL
+&kp LALT  &kp LEFT_WIN  &kp LCTRL  &kp LEFT_GUI  &mo 2  &mt LEFT_SHIFT SPACE    &kp ENTER  &lt 1 BACKSPACE                             &kp LEFT_ALT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -100,10 +106,10 @@
 
         layer_2 {
             bindings = <
-&kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR         &kp PERCENT                                &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL
-&kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)      &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH
-&kp F1         &kp F2       &kp F3             &kp F4             &kp DEL       &kp LCTRL           &kp F12  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp QUESTION
-&trans         &trans       &trans             &kp RIGHT_CONTROL  &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                            &trans
+&kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR     &kp PERCENT                                &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
+&kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&kp F1         &kp F2       &kp F3             &kp F4         &kp DEL       &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&trans         &trans       &trans             &kp LCTRL      &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
