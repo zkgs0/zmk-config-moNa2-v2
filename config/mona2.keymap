@@ -40,6 +40,7 @@
             bindings = <&kp LCTRL>;
             key-positions = <21 22>;
             layers = <1 2>;
+            timeout-ms = <250>;
         };
     };
 
@@ -108,7 +109,7 @@
             bindings = <
 &kp CAPS       &kp AT_SIGN  &kp POUND          &kp DOLLAR     &kp PERCENT                                &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
 &kp BACKSPACE  &kp TILDE    &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp F1         &kp F2       &kp F3             &kp F4         &kp DEL       &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&kp F1         &kp F2       &kp F3             &kp LS(LG(V))  &kp DEL       &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
 &trans         &trans       &trans             &kp LCTRL      &trans        &kp LEFT_CONTROL    &trans   &mo 3                                                   &trans
             >;
 
