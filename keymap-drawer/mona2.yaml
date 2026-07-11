@@ -79,7 +79,7 @@ layers:
   - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - '3'
   - {t: ▽, type: trans}
@@ -122,8 +122,8 @@ layers:
   - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LCTRL
+  - {t: ▽, type: trans}
   - {type: held}
   - LEFT CONTROL
   - {t: ▽, type: trans}
@@ -232,7 +232,7 @@ layers:
   - '&mkp MB1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 1
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -566,4 +566,4 @@ combos:
   k: TAB
 - p: [21, 22]
   k: LCTRL
-  l: ['1', '2']
+  l: [default, '2']
