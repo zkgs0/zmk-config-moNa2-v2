@@ -21,6 +21,23 @@ include:
   - board: seeeduino_xiao_ble
     shield: mona2_r rgbled_adapter
     snippet: studio-rpc-usb-uart
+    artifact-name: mona2_r-pmw3610
+  - board: seeeduino_xiao_ble
+    shield: mona2_r rgbled_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: '-DEXTRA_CONF_FILE=../../config/paw3222.conf'
+    artifact-name: mona2_r-paw3222
+  # ── デバッグ用：central(右) を USB ロギング付きでビルド ──
+  # studio-rpc-usb-uart スナップショットは付けない（USB の CDC ACM を
+  # ロギング・コンソール専用にして二重 CDC 競合を避けるため）。
+  # ZMK_USB_LOGGING=y で ZMK ログは自動的に DBG(level 4) になる。
+  # PMW3610 ベース。PAW3222 機なら下の cmake-args の行を有効化して使う。
+  - board: seeeduino_xiao_ble
+    shield: mona2_r rgbled_adapter
+    snippet: cdc-acm-console
+    cmake-args: '-DCONFIG_ZMK_USB_LOGGING=y'
+    # cmake-args: '-DCONFIG_ZMK_USB_LOGGING=y -DEXTRA_CONF_FILE=../../config/paw3222.conf'
+    artifact-name: mona2_r-logging
   - board: seeeduino_xiao_ble
     shield: mona2_l rgbled_adapter
   - board: seeeduino_xiao_ble
