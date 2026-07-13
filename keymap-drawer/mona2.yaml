@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - LANG1
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - {t: ESC, h: '&m_esc2'}
-  - LANG2
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
@@ -270,9 +270,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '7', h: toggle}
