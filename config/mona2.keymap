@@ -335,10 +335,10 @@
 
         NUM {
             bindings = <
-&kp CAPS       &td_lt                         &td_gt             &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
-&kp BACKSPACE  &kp TILDE                      &kp DOUBLE_QUOTES  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp F1         &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe           &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
-&trans         &trans                         &trans             &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
+&kp CAPS       &td_lt                         &td_gt     &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
+&kp BACKSPACE  &kp DOT                        &kp COMMA  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&kp F1         &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe   &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&trans         &trans                         &trans     &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
