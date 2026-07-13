@@ -324,10 +324,10 @@
 
         SYS {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)      &kp LS(NUMBER_5)                         &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp PIPE   &kp BACKSLASH
-&kp TAB           &kp LBKT          &kp RBKT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &trans  &kp LEFT          &kp DOWN           &kp UP            &kp RIGHT  &kp COLON
-&trans            &trans            &trans            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans    &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp TILDE         &kp GRAVE  &kp SEMI
-&trans            &trans            &kp LCTRL         &trans                &mo 4                  &trans    &trans  &trans                                                            &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)      &kp LS(NUMBER_5)                         &kp LS(NUMBER_6)      &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp PIPE       &kp BACKSLASH
+&kp TAB           &kp LBKT          &kp RBKT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &trans  &kp LEFT              &kp DOWN          &kp UP            &kp RIGHT      &kp COLON
+&trans            &trans            &trans            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans    &trans  &kp LS(SINGLE_QUOTE)  &kp SINGLE_QUOTE  &kp GRAVE         &kp LS(GRAVE)  &kp SEMI
+&trans            &trans            &kp LCTRL         &trans                &mo 4                  &trans    &trans  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
