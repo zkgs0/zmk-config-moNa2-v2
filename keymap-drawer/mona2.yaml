@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - LCTRL
   - LEFT GUI
-  - SYM
+  - NUM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYS}
@@ -81,7 +81,7 @@ layers:
   - LEFT WIN
   - LCTRL
   - LEFT CONTROL
-  - SYM
+  - NUM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYS}
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  SYM:
+  NUM:
   - CAPS
   - '&td_lt'
   - '&td_gt'
@@ -152,7 +152,7 @@ layers:
   - '6'
   - KP SLASH
   - F1
-  - {t: Ctl+PAGE UP, h: F2}
+  - '&ht250 F2 RC(PAGE_UP)'
   - '&td_pipe'
   - Sft+Gui+V
   - DEL
@@ -188,23 +188,23 @@ layers:
   - Gui+RIGHT ARROW
   - Ctl+Gui+LEFT ARROW
   - Ctl+Gui+RIGHT ARROW
-  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
+  - F11
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
   - Gui+Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F11
   - F12
-  - PAGE UP
+  - HOME
   - PAGE DOWN
+  - PAGE UP
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -609,4 +609,4 @@ combos:
   k: TAB
 - p: [21, 22]
   k: LCTRL
-  l: [MAC, '1', SYM]
+  l: [MAC, '1', NUM]
