@@ -91,7 +91,7 @@
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 7>;                           //スクロール量1/7 (cpi800化で速くなった分を補正)
+            <&zip_scroll_scaler 1 9>;                           //スクロール量1/9 (体感調整 1/7→1/9)
     };
 
 };
