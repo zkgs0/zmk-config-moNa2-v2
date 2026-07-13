@@ -321,12 +321,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        NUM {
+        SYS {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp BACKSLASH
-&kp TAB       &kp LBKT      &kp RBKT      &kp RIGHT_BRACKET  &trans                  &trans  &kp LEFT          &kp DOWN           &kp UP        &kp RIGHT     &kp COLON
-&trans        &trans        &trans        &trans             &trans        &trans    &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp TILDE     &trans        &kp SEMI
-&trans        &trans        &kp LCTRL     &trans             &mo 4         &trans    &trans  &trans                                                           &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)      &kp LS(NUMBER_5)                         &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp PIPE   &kp BACKSLASH
+&kp TAB           &kp LBKT          &kp RBKT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &trans  &kp LEFT          &kp DOWN           &kp UP            &kp RIGHT  &kp COLON
+&trans            &trans            &trans            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans    &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp TILDE         &kp GRAVE  &kp SEMI
+&trans            &trans            &kp LCTRL         &trans                &mo 4                  &trans    &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -343,7 +343,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        NAV {
+        FUN {
             bindings = <
 &trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &kp F1   &kp F2   &kp F3       &kp F4         &kp F5
 &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &kp F6   &kp F7   &kp F8       &kp F9         &kp F10
