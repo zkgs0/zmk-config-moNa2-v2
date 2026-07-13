@@ -20,8 +20,8 @@
 };
 
 &lt {
-    quick-tap-ms = <300>;
-    flavor = "balanced";
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
     tapping-term-ms = <150>;
 };
 
@@ -314,8 +314,8 @@
         WIN {
             bindings = <
 &kp Q     &kp W         &kp E      &kp R             &kp T                                     &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A     &kp S         &kp D      &kp F             &kp G                          &kp LANG1  &kp H            &kp J  &kp K      &kp L    &kp MINUS
-&kp Z     &kp X         &kp C      &kp V             &kp B  &kp ESC                 &kp LANG2  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RCTRL
+&kp A     &kp S         &kp D      &kp F             &kp G                          &trans     &kp H            &kp J  &kp K      &kp L    &kp MINUS
+&kp Z     &kp X         &kp C      &kp V             &kp B  &ht_esc 0 ESCAPE        &trans     &kp N            &kp M  &kp COMMA  &kp DOT  &kp RCTRL
 &kp LALT  &kp LEFT_WIN  &kp LCTRL  &kp LEFT_CONTROL  &mo 3  &mt LEFT_SHIFT SPACE    &kp ENTER  &lt 2 BACKSPACE                             &kp LEFT_ALT
             >;
 
@@ -335,10 +335,10 @@
 
         NUM {
             bindings = <
-&kp CAPS       &td_lt                 &td_gt             &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                               &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
-&kp BACKSPACE  &kp TILDE              &kp DOUBLE_QUOTES  &kp LS(SPACE)              &kp KP_ENTER                                 &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp F1         &ht_kp F2 RC(PAGE_UP)  &td_pipe           &kp LS(LG(V))              &kp DEL                  &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
-&trans         &trans                 &kp LCTRL          &trans                     &trans                   &kp LEFT_CONTROL    &trans   &mo 4                                                   &trans
+&kp CAPS       &td_lt                         &td_gt             &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
+&kp BACKSPACE  &kp TILDE                      &kp DOUBLE_QUOTES  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&kp F1         &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe           &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&trans         &trans                         &trans             &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
