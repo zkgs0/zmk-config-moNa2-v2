@@ -334,10 +334,10 @@
 
         SYM {
             bindings = <
-&kp CAPS       &kp AT_SIGN            &kp POUND          &kp DOLLAR     &kp PERCENT                                &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
-&kp BACKSPACE  &kp TILDE              &kp DOUBLE_QUOTES  &kp LS(SPACE)  &kp KP_ENTER                      &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp F1         &ht250 F2 RC(PAGE_UP)  &td_pipe           &kp LS(LG(V))  &kp DEL       &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
-&trans         &trans                 &kp LCTRL          &trans         &trans        &kp LEFT_CONTROL    &trans   &mo 4                                                   &trans
+&kp CAPS       &td_lt                 &td_gt             &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                               &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
+&kp BACKSPACE  &kp TILDE              &kp DOUBLE_QUOTES  &kp LS(SPACE)              &kp KP_ENTER                                 &trans   &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&kp F1         &ht250 F2 RC(PAGE_UP)  &td_pipe           &kp LS(LG(V))              &kp DEL                  &kp LCTRL           &kp F12  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&trans         &trans                 &kp LCTRL          &trans                     &trans                   &kp LEFT_CONTROL    &trans   &mo 4                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
