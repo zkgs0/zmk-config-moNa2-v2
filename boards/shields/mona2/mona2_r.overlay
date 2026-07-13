@@ -69,6 +69,21 @@
     status = "okay";
     device = <&trackball_central>;
 
+    /* スクロール速度モディファイア。
+       子ノードは宣言順に評価され、process-next付きなら後続(scroller)にも流れる。
+       X/Y段階で倍率をかけてからscrollerが変換するので、実効速度 = 倍率 × 1/5 */
+    speed_fast {
+        layers = <9>;      // SCR_FAST (SCROLLレイヤーのP位置ホールド)
+        process-next;
+        input-processors = <&zip_xy_scaler 3 1>;    // 3倍速
+    };
+
+    speed_slow {
+        layers = <10>;     // SCR_SLOW (SCROLLレイヤーの-位置ホールド)
+        process-next;
+        input-processors = <&zip_xy_scaler 1 3>;    // 1/3速
+    };
+
     scroller {
         layers = <4 7>;    // 4=NAVホールド中 / 7=SCROLL(トグル用、&tog 7を配置すると有効)
         input-processors =

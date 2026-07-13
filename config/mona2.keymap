@@ -379,8 +379,8 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &tog 7  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &mo 9
+&trans  &trans  &trans  &trans  &trans            &trans  &tog 7  &trans  &trans  &trans  &mo 10
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
@@ -397,7 +397,7 @@
             >;
         };
 
-        layer_9 {
+        SCR_FAST {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -406,7 +406,7 @@
             >;
         };
 
-        layer_10 {
+        SCR_SLOW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
