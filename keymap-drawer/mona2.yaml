@@ -152,8 +152,8 @@ layers:
   - '6'
   - KP SLASH
   - F1
-  - F2
-  - F3
+  - {t: Ctl+PAGE UP, h: F2}
+  - '&td_pipe'
   - Sft+Gui+V
   - DEL
   - LCTRL
