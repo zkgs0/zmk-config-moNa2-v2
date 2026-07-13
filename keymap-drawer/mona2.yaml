@@ -275,7 +275,7 @@ layers:
   - '&mkp MB1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '7', h: toggle}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -318,7 +318,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '7', h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
