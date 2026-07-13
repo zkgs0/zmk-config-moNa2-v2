@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - ESC
+  - {t: ESC, h: '&m_esc2'}
   - LANG2
   - N
   - M
