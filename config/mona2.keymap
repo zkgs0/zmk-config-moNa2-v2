@@ -164,7 +164,7 @@
         MOUSE {
             bindings = <
 &trans  &trans    &trans    &trans    &trans                    &trans  &trans     &trans     &trans     &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &tog 7  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                   &trans
             >;
@@ -175,7 +175,7 @@
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &tog 7  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
