@@ -152,7 +152,7 @@ layers:
   - '6'
   - KP SLASH
   - F1
-  - '&ht250 F2 RC(PAGE_UP)'
+  - {t: Ctl+PAGE UP, h: F2}
   - '&td_pipe'
   - Sft+Gui+V
   - DEL
