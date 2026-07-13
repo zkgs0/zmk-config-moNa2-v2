@@ -75,7 +75,7 @@
     speed_fast {
         layers = <9>;      // SCR_FAST (SCROLLレイヤーのP位置ホールド)
         process-next;
-        input-processors = <&zip_xy_scaler 3 1>;    // 3倍速
+        input-processors = <&zip_xy_scaler 2 1>;    // 2倍速
     };
 
     speed_slow {
@@ -91,7 +91,7 @@
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
+            <&zip_scroll_scaler 1 7>;                           //スクロール量1/7 (cpi800化で速くなった分を補正)
     };
 
 };
