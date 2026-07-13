@@ -63,6 +63,111 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        // ── cornix由来のテキストマクロ (前後スペース付きR演算子) ──
+        m_pipe: m_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;    // " |> "
+        };
+
+        m_mpipe: m_mpipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp PRCNT &kp GT &kp PRCNT &kp SPACE>;    // " %>% "
+        };
+
+        m_eqeq: m_eqeq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp EQUAL &kp EQUAL &kp SPACE>;    // " == "
+        };
+
+        m_neq: m_neq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp EXCL &kp EQUAL &kp SPACE>;    // " != "
+        };
+
+        m_eq: m_eq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp EQUAL &kp SPACE>;    // " = "
+        };
+
+        m_lt: m_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp LT &kp SPACE>;    // " < "
+        };
+
+        m_le: m_le {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp LT &kp EQUAL &kp SPACE>;    // " <= "
+        };
+
+        m_larrow: m_larrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp LT &kp MINUS &kp SPACE>;    // " <- "
+        };
+
+        m_gt: m_gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp GT &kp SPACE>;    // " > "
+        };
+
+        m_ge: m_ge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp GT &kp EQUAL &kp SPACE>;    // " >= "
+        };
+
+        m_rarrow: m_rarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp MINUS &kp GT &kp SPACE>;    // " -> "
+        };
+
+        m_fatarrow: m_fatarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;    // " => "
+        };
+
+        m_esc2: m_esc2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <15>;
+            tap-ms = <5>;
+            bindings = <&kp ESC &kp ESC>;    // ESC×2 (Vim用)
+        };
     };
 
     behaviors {
@@ -89,6 +194,94 @@
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
+        };
+
+        // ── cornix由来のhold-tap ──
+        // TD0用: タップ=キーコード / ホールド=キーコード (250ms版)。例: &ht250 LSHFT LC(PG_UP)
+        ht250: ht250 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // TD10用: タップ=キーコード / ホールド=ESC×2。使い方: &ht_esc 0 ESC
+        ht_esc: ht_esc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&m_esc2>, <&kp>;
+        };
+
+        // td_pipeの1段目: タップ=キーコード / ホールド=" |> "。使い方: &ht_pipe 0 LC(PG_DN)
+        ht_pipe: ht_pipe {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&m_pipe>, <&kp>;
+        };
+
+        // td_ltの1段目: タップ=" < " / ホールド=" <= "。使い方: &ht_le 0 0
+        ht_le: ht_le {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&m_le>, <&m_lt>;
+        };
+
+        // td_gtの1段目: タップ=" > " / ホールド=" >= "。使い方: &ht_ge 0 0
+        ht_ge: ht_ge {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&m_ge>, <&m_gt>;
+        };
+
+        // td_gtの2段目: タップ=" -> " / ホールド=" => "。使い方: &ht_arrows 0 0
+        ht_arrows: ht_arrows {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&m_fatarrow>, <&m_rarrow>;
+        };
+
+        // ── cornix由来のtap-dance ──
+        // TD1: タップ=Ctrl+PgDn / ホールド=" |> " / 2回タップ=" %>% "
+        td_pipe: td_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&ht_pipe 0 LC(PG_DN)>, <&m_mpipe>;
+        };
+
+        // TD4: タップ=" < " / ホールド=" <= " / 2回タップ=" <- "
+        td_lt: td_lt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&ht_le 0 0>, <&m_larrow>;
+        };
+
+        // TD5: タップ=" > " / ホールド=" >= " / 2回タップ=" -> " / 2回タップ+ホールド=" => "
+        td_gt: td_gt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&ht_ge 0 0>, <&ht_arrows 0 0>;
+        };
+
+        // TD9: タップ=" == " / 2回タップ=" != "
+        td_eq: td_eq {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&m_eqeq>, <&m_neq>;
         };
     };
 
