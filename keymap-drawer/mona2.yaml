@@ -41,7 +41,7 @@ layers:
   - SYM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
-  - {t: BACKSPACE, h: NUM}
+  - {t: BACKSPACE, h: SYS}
   - LEFT ALT
   '1':
   - Q
@@ -84,24 +84,24 @@ layers:
   - SYM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
-  - {t: BACKSPACE, h: NUM}
+  - {t: BACKSPACE, h: SYS}
   - LEFT ALT
-  NUM:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
+  SYS:
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - '|'
   - \
   - TAB
   - '['
   - ']'
-  - ']'
-  - {t: ▽, type: trans}
+  - (
+  - )
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -111,20 +111,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+[
+  - Sft+]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''''
   - '"'
   - '~'
-  - {t: ▽, type: trans}
+  - '`'
   - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
   - {t: ▽, type: trans}
-  - NAV
+  - FUN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -170,9 +170,9 @@ layers:
   - {type: held}
   - LEFT CONTROL
   - {t: ▽, type: trans}
-  - NAV
+  - FUN
   - {t: ▽, type: trans}
-  NAV:
+  FUN:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - PRINTSCREEN
