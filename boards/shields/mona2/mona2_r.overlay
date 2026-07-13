@@ -69,7 +69,7 @@
     device = <&trackball_central>;
 
     scroller {
-        layers = <3>;
+        layers = <4 7>;    // 4=NAVホールド中 / 7=SCROLL(トグル用、&tog 7を配置すると有効)
         input-processors =
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
@@ -86,4 +86,24 @@
 // 11/12/13 = 左手 MB3/MB2/MB1, 17/18/19 = 右手 LCLK/MCLK/RCLK
 &zip_temp_layer {
     excluded-positions = <11 12 13 17 18 19>;
+};
+
+// ジェスチャ用プロセッサ：GESTUREレイヤー(8)中のボール移動をキー入力に変換
+// bindings順 = 右, 左, 下, 上 (現状はAeroSpace用プレースホルダ。変更はこの4つを書き換え)
+// 右=次ワークスペース / 左=前ワークスペース / 下=アプリExposé / 上=Mission Control
+/ {
+    zip_gesture: zip_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        tick = <60>;      // 1発火に必要な移動量。大きいほど「大振りフリック」向き
+        tap-ms = <20>;
+        bindings = <&kp LA(TAB)>, <&kp LA(LS(TAB))>, <&kp LC(DOWN)>, <&kp LC(UP)>;
+    };
+};
+
+&trackball_central_listener {
+    gesture {
+        layers = <8>;    // GESTURE (&mo 8 を配置すると有効)
+        input-processors = <&zip_gesture>, <&zip_xy_scaler 0 1>;    // scaler 0倍でカーソル移動を殺す
+    };
 };
