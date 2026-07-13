@@ -59,7 +59,7 @@ layers:
   - D
   - F
   - G
-  - LANG1
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -70,8 +70,8 @@ layers:
   - C
   - V
   - B
-  - ESC
-  - LANG2
+  - {t: ESCAPE, h: '&m_esc2'}
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
@@ -152,12 +152,12 @@ layers:
   - '6'
   - KP SLASH
   - F1
-  - {t: Ctl+PAGE UP, h: F2}
+  - {t: Ctl+PAGE UP, h: LEFT SHIFT}
   - '&td_pipe'
   - Sft+Gui+V
   - DEL
-  - LCTRL
-  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '0'
   - '1'
   - '2'
@@ -165,10 +165,10 @@ layers:
   - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - LEFT CONTROL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - FUN
   - {t: ▽, type: trans}
