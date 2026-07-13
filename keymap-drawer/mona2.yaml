@@ -141,8 +141,8 @@ layers:
   - '9'
   - KP EQUAL
   - BACKSPACE
-  - '~'
-  - '"'
+  - .
+  - ','
   - Sft+SPACE
   - KP ENTER
   - {t: ▽, type: trans}
