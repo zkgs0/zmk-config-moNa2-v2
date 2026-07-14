@@ -21,7 +21,7 @@
 
 &lt {
     quick-tap-ms = <200>;
-    flavor = "balanced";    // tap-preferredだと高速ロール時にタップ(BSPC)暴発+レイヤー不発。レイヤーキーはbalancedが適性
+    flavor = "hold-preferred";    // 別キー押下で即ホールド確定(お試し中)。タップ暴発が出たらbalancedへ戻す
     tapping-term-ms = <150>;
 };
 
