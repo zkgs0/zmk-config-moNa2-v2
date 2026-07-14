@@ -1,0 +1,3 @@
+# ローカル専用シークレット (gen_secrets.py 関連)
+secrets.txt
+boards/shields/mona2/secrets.dtsi

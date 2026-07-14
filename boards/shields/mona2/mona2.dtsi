@@ -115,3 +115,23 @@
     };
 
 };
+/* ── シークレット定型文マクロの実装 ─────────────────────────
+   scripts/gen_secrets.py が生成する secrets.dtsi (gitignore対象) が
+   あれば本物のフレーズ、無ければダミー(&none=何もしない)になる。
+   keymap側の m_sec1〜m_sec8 から呼ばれる。CIビルドは常にダミー。 */
+#if __has_include("secrets.dtsi")
+#include "secrets.dtsi"
+#else
+/ {
+    macros {
+        sec1_impl: sec1_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec2_impl: sec2_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec3_impl: sec3_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec4_impl: sec4_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec5_impl: sec5_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec6_impl: sec6_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec7_impl: sec7_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+        sec8_impl: sec8_impl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&none>; };
+    };
+};
+#endif

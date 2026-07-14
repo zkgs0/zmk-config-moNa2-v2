@@ -169,6 +169,56 @@
             tap-ms = <5>;
             bindings = <&kp ESC &kp ESC>;    // ESC×2 (Vim用)
         };
+
+        // ── シークレット定型文 (中身はローカルのsecrets.dtsi側。CIビルドでは何もしない) ──
+
+        m_sec1: m_sec1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec1_impl>;
+        };
+
+        m_sec2: m_sec2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec2_impl>;
+        };
+
+        m_sec3: m_sec3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec3_impl>;
+        };
+
+        m_sec4: m_sec4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec4_impl>;
+        };
+
+        m_sec5: m_sec5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec5_impl>;
+        };
+
+        m_sec6: m_sec6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec6_impl>;
+        };
+
+        m_sec7: m_sec7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec7_impl>;
+        };
+
+        m_sec8: m_sec8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sec8_impl>;
+        };
     };
 
     behaviors {
