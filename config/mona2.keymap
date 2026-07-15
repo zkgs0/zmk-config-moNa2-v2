@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 200    // エンコーダー1トリガーあたりのスクロール量 (旧100)
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 67    // エンコーダー1トリガーあたりのスクロール量 (100→200→67: トラボ標準速の1/3シフトに追従)
 #define WIN 1
 #define MOUSE 6
 #define SCROLL 7
