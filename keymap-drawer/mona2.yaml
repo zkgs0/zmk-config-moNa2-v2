@@ -151,7 +151,7 @@ layers:
   - '5'
   - '6'
   - KP SLASH
-  - F1
+  - '&caps_word'
   - {t: Ctl+PAGE UP, h: LEFT SHIFT}
   - '&td_pipe'
   - Sft+Gui+V
