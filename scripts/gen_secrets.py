@@ -53,7 +53,8 @@ def char_to_binding(ch: str) -> str:
         return f"&kp {PLAIN[ch]}"
     if ch in SHIFTED:
         return f"&kp LS({SHIFTED[ch]})"
-    raise ValueError(f"非対応文字: {ch!r} (ASCII英数記号のみ対応)")
+    # 注意: 文字そのものをメッセージに含めない (シークレット内容の画面出力を防ぐ)
+    raise ValueError("非対応文字")
 
 
 def macro_node(name: str, phrase: str | None) -> str:
@@ -61,8 +62,14 @@ def macro_node(name: str, phrase: str | None) -> str:
     if phrase is None:
         bindings = "<&none>"
     else:
-        keys = " ".join(char_to_binding(c) for c in phrase)
-        bindings = f"<&kp LANG2 {keys}>"  # 先頭で英数モードへ (IME化け防止)
+        parts = []
+        for pos, c in enumerate(phrase, 1):
+            try:
+                parts.append(char_to_binding(c))
+            except ValueError:
+                # フレーズや文字自体は出力しない (シークレット保護)
+                sys.exit(f"{name} の {pos}文字目が非対応文字です (ASCII英数記号のみ対応)")
+        bindings = f"<&kp LANG2 {' '.join(parts)}>"  # 先頭で英数モードへ (IME化け防止)
     return f"""        {name}_impl: {name}_impl {{
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -78,14 +85,15 @@ def main() -> None:
                  "リポジトリ直下に sec1=... 形式で作成してください。")
 
     phrases: dict[str, str] = {}
-    for line in SECRETS_TXT.read_text(encoding="utf-8").splitlines():
+    for lineno, line in enumerate(SECRETS_TXT.read_text(encoding="utf-8").splitlines(), 1):
         line = line.strip()
         if not line or line.startswith("#"):
             continue
-        key, _, value = line.partition("=")
+        key, sep, value = line.partition("=")
         key = key.strip()
-        if key not in SLOTS:
-            sys.exit(f"不正なキー名: {key} (sec1〜sec8のみ)")
+        if not sep or key not in SLOTS:
+            # 行の内容はフレーズ本体の可能性があるため表示しない (シークレット保護)
+            sys.exit(f"secrets.txt の {lineno}行目が不正です (secN=フレーズ 形式、Nは1〜8)")
         phrases[key] = value
 
     nodes = "\n\n".join(macro_node(s, phrases.get(s)) for s in SLOTS)
