@@ -170,6 +170,38 @@
             bindings = <&kp ESC &kp ESC>;    // ESC×2 (Vim用)
         };
 
+        // ── Vialから移植した操作マクロ (Enter/Up/Tabの定型操作) ──
+
+        m_vial1: m_vial1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            // Enter →200ms→ Up →200ms→ Enter →200ms→ Tab →50ms→ Tab →50ms→ Tab
+            bindings
+                = <&macro_wait_time 200>
+                , <&kp ENTER &kp UP &kp ENTER>
+                , <&macro_wait_time 50>
+                , <&kp TAB &kp TAB &kp TAB>;
+        };
+
+        m_vial2: m_vial2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            // Enter →200ms→ Up,Up →200ms→ Enter →150ms→ Tab,Tab
+            bindings
+                = <&macro_wait_time 200>
+                , <&kp ENTER>
+                , <&macro_wait_time 10>
+                , <&kp UP>
+                , <&macro_wait_time 200>
+                , <&kp UP>
+                , <&macro_wait_time 150>
+                , <&kp ENTER>
+                , <&macro_wait_time 10>
+                , <&kp TAB &kp TAB>;
+        };
+
         // ── シークレット定型文 (中身はローカルのsecrets.dtsi側。CIビルドでは何もしない) ──
 
         m_sec1: m_sec1 {
