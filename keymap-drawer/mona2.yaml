@@ -260,8 +260,8 @@ layers:
   - BT CLR ALL
   '6':
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&m_vial1'
+  - '&m_vial2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
