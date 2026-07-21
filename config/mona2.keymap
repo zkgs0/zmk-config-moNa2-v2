@@ -391,7 +391,7 @@
 &kp LEFT_SHIFT  &trans                         &trans     &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         FUN {
