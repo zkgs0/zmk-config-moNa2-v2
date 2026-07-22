@@ -260,8 +260,8 @@ layers:
   - BT CLR ALL
   '6':
   - {t: ▽, type: trans}
-  - '&m_vial1'
-  - '&m_vial2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -303,8 +303,8 @@ layers:
   - {t: ▽, type: trans}
   '7':
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&m_vial1'
+  - '&m_vial2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -312,10 +312,10 @@ layers:
   - SCR_SLOW
   - SCR_FAST
   - {t: ▽, type: trans}
+  - Sft+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '7', h: toggle}
