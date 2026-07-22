@@ -177,13 +177,11 @@
             #binding-cells = <0>;
             tap-ms = <10>;
 
-            // Enter →200ms→ Up →200ms→ Enter →200ms→ Tab →50ms→ Tab →50ms→ Tab
+            // Enter →200ms→ Up →200ms→ Enter →200ms→ Tab →200ms→ Tab (全間隔200ms)
 
             bindings =
                 <&macro_wait_time 200>,
-                <&kp ENTER &kp UP &kp ENTER>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp TAB &kp TAB>;
+                <&kp ENTER &kp UP &kp ENTER &kp TAB &kp TAB>;
         };
 
         m_vial2: m_vial2 {
