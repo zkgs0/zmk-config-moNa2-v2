@@ -7,11 +7,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 300    // エンコーダー1トリガーあたりのスクロール量 (100→200→300: 体感調整、トラボ速度とは独立)
-#define WIN 1
-#define MOUSE 6
-#define SCROLL 7
-#define GESTURE 8
-#define WIN_FIX 13
+
+// 注意: レイヤー名のマクロ(#define WIN 1等)を定義しないこと。
+// プリプロセッサがkeymapのレイヤーノード名まで数字に置換してしまい、
+// BLEに乗るレイヤー名が壊れる(過去にWIN/MOUSE等が"1"/"6"になっていた)。
 
 &mt {
     flavor = "tap-preferred";
