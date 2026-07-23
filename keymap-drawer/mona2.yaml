@@ -41,7 +41,7 @@ layers:
   - NUM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
-  - {t: BACKSPACE, h: SYS}
+  - {t: BACKSPACE, h: SYMBOL}
   - LEFT ALT
   '1':
   - Q
@@ -84,9 +84,9 @@ layers:
   - NUM
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
-  - {t: BACKSPACE, h: SYS}
+  - {t: BACKSPACE, h: SYMBOL}
   - LEFT ALT
-  SYS:
+  SYMBOL:
   - Sft+1
   - Sft+2
   - Sft+3
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  BT:
+  UTILITY:
   - {t: MAC, h: toggle}
   - {t: '1', h: toggle}
   - {t: ▽, type: trans}
@@ -309,8 +309,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SCR_SLOW
-  - SCR_FAST
+  - SLOW
+  - FAST
   - {t: ▽, type: trans}
   - Sft+TAB
   - {t: ▽, type: trans}
@@ -387,7 +387,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCR_FAST:
+  FAST:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -430,7 +430,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCR_SLOW:
+  SLOW:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -473,7 +473,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '11':
+  SPARE1:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -516,7 +516,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '12':
+  SPARE2:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -604,7 +604,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [39, 38]
-  k: {t: ESC, h: BT}
+  k: {t: ESC, h: UTILITY}
 - p: [11, 12]
   k: TAB
 - p: [21, 22]
