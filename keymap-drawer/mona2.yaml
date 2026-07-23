@@ -43,7 +43,7 @@ layers:
   - ENTER
   - {t: BACKSPACE, h: SYMBOL}
   - LEFT ALT
-  '1':
+  WIN:
   - Q
   - W
   - E
@@ -217,7 +217,7 @@ layers:
   - {t: ▽, type: trans}
   UTILITY:
   - {t: MAC, h: toggle}
-  - {t: '1', h: toggle}
+  - {t: WIN, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&m_sec1'
@@ -258,7 +258,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - BT CLR ALL
-  '6':
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -275,7 +275,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '7', h: toggle}
+  - {t: SCROLL, h: toggle}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '7':
+  SCROLL:
   - {t: ▽, type: trans}
   - '&m_vial1'
   - '&m_vial2'
@@ -318,7 +318,7 @@ layers:
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '7', h: toggle}
+  - {t: SCROLL, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -344,7 +344,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '8':
+  GESTURE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -559,7 +559,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '13':
+  WIN_FIX:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -609,7 +609,7 @@ combos:
   k: TAB
 - p: [21, 22]
   k: LCTRL
-  l: [MAC, '1', NUM]
+  l: [MAC, WIN, NUM]
 - p: [22, 23]
   k: LEFT ALT
-  l: [MAC, '1', NUM]
+  l: [MAC, WIN, NUM]
