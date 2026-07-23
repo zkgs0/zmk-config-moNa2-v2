@@ -412,7 +412,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        SYS {
+        SYMBOL {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)      &kp LS(NUMBER_5)                         &kp LS(NUMBER_6)      &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp PIPE       &kp BACKSLASH
 &kp TAB           &kp LBKT          &kp RBKT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &trans  &kp LEFT              &kp DOWN          &kp UP            &kp RIGHT      &kp COLON
@@ -445,7 +445,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        BT {
+        UTILITY {
             bindings = <
 &to 0   &to 1   &trans  &trans  &m_sec1                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &m_sec2            &trans       &trans        &trans        &trans        &trans        &trans
@@ -487,7 +487,7 @@
             >;
         };
 
-        SCR_FAST {
+        FAST {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -496,7 +496,7 @@
             >;
         };
 
-        SCR_SLOW {
+        SLOW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -505,7 +505,7 @@
             >;
         };
 
-        layer_11 {
+        SPARE1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -514,7 +514,7 @@
             >;
         };
 
-        layer_12 {
+        SPARE2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
