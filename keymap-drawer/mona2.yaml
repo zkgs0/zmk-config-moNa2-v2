@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - LCTRL
   - LEFT GUI
-  - NUM
+  - NUMBER
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYMBOL}
@@ -81,7 +81,7 @@ layers:
   - LEFT WIN
   - LCTRL
   - LEFT CONTROL
-  - NUM
+  - NUMBER
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYMBOL}
@@ -124,12 +124,12 @@ layers:
   - {t: ▽, type: trans}
   - LCTRL
   - {t: ▽, type: trans}
-  - FUN
+  - FUNCTION
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  NUM:
+  NUMBER:
   - CAPS
   - '&td_lt'
   - '&td_gt'
@@ -170,9 +170,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - FUN
+  - FUNCTION
   - {t: ▽, type: trans}
-  FUN:
+  FUNCTION:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - PRINTSCREEN
@@ -609,7 +609,7 @@ combos:
   k: TAB
 - p: [21, 22]
   k: LCTRL
-  l: [MAC, WIN, NUM]
+  l: [MAC, WIN, NUMBER]
 - p: [22, 23]
   k: LEFT ALT
-  l: [MAC, WIN, NUM]
+  l: [MAC, WIN, NUMBER]
