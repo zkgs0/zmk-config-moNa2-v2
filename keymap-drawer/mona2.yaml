@@ -613,3 +613,9 @@ combos:
 - p: [22, 23]
   k: LEFT ALT
   l: [MAC, WIN, NUMBER]
+- p: [21, 22, 23]
+  k: Sft+LCTRL
+  l: [MAC, NUMBER, WIN]
+- p: [22, 23, 24]
+  k: Sft+LEFT ALT
+  l: [WIN, NUMBER, MAC]
