@@ -306,7 +306,7 @@ layers:
   - '&m_vial1'
   - '&m_vial2'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&m_vial3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SLOW
