@@ -221,6 +221,18 @@
                 <&kp TAB &kp TAB>;
         };
 
+        m_vial3: m_vial3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+
+            // Enter →150ms→ Down →150ms→ Enter (全間隔150ms)
+
+            bindings =
+                <&macro_wait_time 150>,
+                <&kp ENTER &kp DOWN &kp ENTER>;
+        };
+
         // ── シークレット定型文 (中身はローカルのsecrets.dtsi側。CIビルドでは何もしない) ──
 
         m_sec1: m_sec1 {
@@ -480,7 +492,7 @@
 
         SCROLL {
             bindings = <
-&trans       &m_vial1  &m_vial2  &trans   &trans                    &trans  &trans  &mo 10  &mo 9   &trans
+&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
 &kp LS(TAB)  &trans    &trans    &kp TAB  &trans            &trans  &tog 7  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans  &trans    &trans  &trans                          &trans
