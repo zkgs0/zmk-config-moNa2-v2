@@ -64,6 +64,15 @@
 };
 
 
+// SCROLLレイヤー自動タイムアウト用のtemp-layerインスタンス (AML用&zip_temp_layerとは別物)。
+// excluded-positionsを持たないため、キー押下ではレイヤー解除されない(ボール無入力のタイムアウトのみ)。
+/ {
+    zip_scroll_temp_layer: zip_scroll_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+    };
+};
+
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
@@ -82,6 +91,16 @@
         layers = <10>;     // SCR_SLOW (SCROLLレイヤーのI位置ホールド)
         process-next;
         input-processors = <&zip_xy_scaler 1 3>;    // 1/3速 (実効1/81)
+    };
+
+    /* SCROLLレイヤー(7)の自動タイムアウト:
+       トグルでSCROLLに入った後、ボール入力のたびに10秒タイマーをリフレッシュし、
+       10秒ボール操作が無ければ自動でベースレイヤーへ戻る。&tog 7での手動解除も従来通り。
+       注意: トグル後に一度もボールを動かさない場合はタイマーが始まらない(入力起点のため) */
+    scroll_keepalive {
+        layers = <7>;      // SCROLL中のみ発火 (レイヤー4のホールドスクロールには効かせない)
+        process-next;
+        input-processors = <&zip_scroll_temp_layer 7 10000>;
     };
 
     scroller {
