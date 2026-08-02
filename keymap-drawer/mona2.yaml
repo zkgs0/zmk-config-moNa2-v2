@@ -609,13 +609,13 @@ combos:
   k: TAB
 - p: [21, 22]
   k: LCTRL
-  l: [MAC, WIN, NUMBER, WIN_FIX]
-- p: [22, 23]
+  l: [MAC, NUMBER]
+- p: [21, 22]
   k: LEFT ALT
   l: [WIN, WIN_FIX]
 - p: [21, 22, 23]
   k: Sft+LCTRL
-  l: [MAC, NUMBER, WIN, WIN_FIX]
-- p: [22, 23, 24]
+  l: [MAC, NUMBER]
+- p: [21, 22, 23]
   k: Sft+LEFT ALT
   l: [WIN, WIN_FIX]
