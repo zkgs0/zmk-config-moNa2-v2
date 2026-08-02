@@ -1,0 +1,22 @@
+# moNa2固有の小改造モジュール。
+# ビルド時に -DZMK_EXTRA_MODULES=<repo>/local_modules/mona2_tweaks を渡した時だけ組み込まれる
+# (GitHub CIはこのフラグを渡さないため、CIビルドには含まれない)。
+
+config MONA2_SCROLL_IDLE_TIMEOUT
+    bool "SCROLLレイヤーの無操作自動解除"
+    default y
+    depends on ZMK_SPLIT_ROLE_CENTRAL || !ZMK_SPLIT
+    help
+      対象レイヤーがアクティブになった時点で無操作タイマーを開始し、
+      キー押下・トラックボール・エンコーダーのいずれの操作でもリセットする。
+      タイムアウトまで無操作ならレイヤーを自動で解除する。
+
+config MONA2_SCROLL_IDLE_TIMEOUT_LAYER
+    int "対象レイヤー番号"
+    depends on MONA2_SCROLL_IDLE_TIMEOUT
+    default 7
+
+config MONA2_SCROLL_IDLE_TIMEOUT_MS
+    int "無操作タイムアウト (ms)"
+    depends on MONA2_SCROLL_IDLE_TIMEOUT
+    default 10000
