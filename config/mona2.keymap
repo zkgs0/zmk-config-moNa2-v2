@@ -554,7 +554,7 @@
 
         WIN_FIX {
             bindings = <
-&trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mt INT_HENKAN INT_MUHENKAN  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp LS(LC(V))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans                          &trans
