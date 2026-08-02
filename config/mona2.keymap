@@ -501,7 +501,7 @@
 &trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
 &kp LS(TAB)  &trans    &trans    &kp TAB  &trans            &trans  &tog 7  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans    &trans    &trans   &trans  &trans    &trans  &trans                          &trans
+&trans       &trans    &trans    &trans   &trans  &trans    &none   &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
