@@ -274,8 +274,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -317,8 +317,8 @@ layers:
   - {t: ▽, type: trans}
   - TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
