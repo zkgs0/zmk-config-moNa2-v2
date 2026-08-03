@@ -234,9 +234,7 @@
 
             // Enter →150ms→ Down →150ms→ Enter (全間隔150ms)
 
-            bindings =
-                <&macro_wait_time 150>,
-                <&kp ENTER &kp DOWN &kp ENTER>;
+            bindings = <&macro_wait_time 150>, <&kp ENTER &kp DOWN &kp ENTER>;
         };
 
         // ── シークレット定型文 (中身はローカルのsecrets.dtsi側。CIビルドでは何もしない) ──
@@ -454,7 +452,7 @@
 
         NUMBER {
             bindings = <
-&kp CAPS        &td_lt                         &td_gt     &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_EQUAL
+&kp CAPS        &td_lt                         &td_gt     &mt LANGUAGE_1 LANGUAGE_2  &mt LS(ENTER) LC(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
 &kp BACKSPACE   &kp DOT                        &kp COMMA  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
 &caps_word      &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe   &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
 &kp LEFT_SHIFT  &trans                         &trans     &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
@@ -499,9 +497,9 @@
         SCROLL {
             bindings = <
 &trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
-&kp LS(TAB)  &trans    &trans    &kp TAB  &trans            &trans  &tog 7  &trans  &trans  &trans  &trans
-&trans       &trans    &trans    &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans    &trans    &trans   &trans  &trans    &none   &trans                          &trans
+&kp LS(TAB)  &trans    &trans    &kp TAB  &trans              &trans  &tog 7  &trans  &trans  &trans  &trans
+&trans       &trans    &trans    &trans   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans    &trans    &trans   &trans    &trans    &none   &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -554,10 +552,10 @@
 
         WIN_FIX {
             bindings = <
-&trans  &trans  &trans  &mt INT_HENKAN INT_MUHENKAN  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LS(LC(V))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &mt LANGUAGE_1 LANGUAGE_2  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LS(LC(V))              &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                     &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
