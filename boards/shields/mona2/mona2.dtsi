@@ -93,7 +93,7 @@
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,         //Y軸反転
             //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&zip_temp_layer 6 10000>;                            //オートマウスレイヤーの選択(レイヤー6=MOUSEを10秒維持)
+            <&zip_temp_layer 6 3000>;                             //オートマウスレイヤーの選択(レイヤー6=MOUSE、無操作3秒で復帰。10秒→3秒 2026-08-03)
     };
 
     left_encoder: encoder_left {
