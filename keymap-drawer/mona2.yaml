@@ -139,7 +139,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - KP EQUAL
+  - '='
   - BACKSPACE
   - .
   - ','
@@ -563,7 +563,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: INT MUHENKAN, h: INT HENKAN}
+  - {t: LANGUAGE 2, h: LANGUAGE 1}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
