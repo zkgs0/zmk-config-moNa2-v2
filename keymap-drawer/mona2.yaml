@@ -134,7 +134,7 @@ layers:
   - '&td_lt'
   - '&td_gt'
   - {t: LANGUAGE 2, h: LANGUAGE 1}
-  - {t: Ctl+ENTER, h: Sft+ENTER}
+  - {t: Sft+ENTER, h: Ctl+ENTER}
   - KP PLUS
   - '7'
   - '8'
