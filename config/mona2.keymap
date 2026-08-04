@@ -73,7 +73,7 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <11 10>;
-            layers = <3>;
+            layers = <3 13>;    // 13=WIN_FIX: WINでNUMBER押下中は13が最上位になるため必須
         };
     };
 
