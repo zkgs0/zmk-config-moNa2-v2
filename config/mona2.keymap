@@ -79,6 +79,7 @@
         };
 
         // G+B(左手人差し指の縦ペア)同時押しでCODEレイヤーへ。esc_t_g(T+G)の1段下版
+
         code_layer {
             bindings = <&mo 11>;
             key-positions = <14 25>;
@@ -502,8 +503,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans            &tog 7  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &tog 7
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                   &trans
             >;
@@ -513,8 +514,8 @@
 
         SCROLL {
             bindings = <
-&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
-&kp LS(TAB)  &trans    &trans    &kp TAB  &trans              &tog 7  &trans  &trans  &trans  &trans  &trans
+&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &tog 7
+&kp LS(TAB)  &trans    &trans    &kp TAB  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &none   &trans                          &trans
             >;
