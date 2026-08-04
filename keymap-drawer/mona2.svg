@@ -331,8 +331,8 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="238" y="99" width="28" height="26" class="combo"/>
-<a href="#SPARE1">
-<text x="252" y="112" class="combo tap layer-activator">SPARE1</text>
+<a href="#CODE">
+<text x="252" y="112" class="combo tap layer-activator">CODE</text>
 </a></g>
 </g>
 </g>
@@ -547,8 +547,8 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="238" y="99" width="28" height="26" class="combo"/>
-<a href="#SPARE1">
-<text x="252" y="112" class="combo tap layer-activator">SPARE1</text>
+<a href="#CODE">
+<text x="252" y="112" class="combo tap layer-activator">CODE</text>
 </a></g>
 </g>
 </g>
@@ -2259,8 +2259,8 @@ path.combo {
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 3080)" class="layer-SPARE1">
-<text x="0" y="28" class="label" id="SPARE1">SPARE1:</text>
+<g transform="translate(30, 3080)" class="layer-CODE">
+<text x="0" y="28" class="label" id="CODE">CODE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

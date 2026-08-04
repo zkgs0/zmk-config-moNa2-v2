@@ -473,7 +473,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SPARE1:
+  CODE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -624,5 +624,5 @@ combos:
   k: '&caps_word'
   l: [NUMBER, WIN_FIX]
 - p: [14, 25]
-  k: SPARE1
+  k: CODE
   l: [MAC, WIN]
