@@ -428,7 +428,7 @@
         td_eq: td_eq {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;    // 150はダブルタップにシビアすぎた。1回タップの確定待ちも250msになる点は仕様
             bindings = <&m_eqeq>, <&m_neq>;
         };
     };
