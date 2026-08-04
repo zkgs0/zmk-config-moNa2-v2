@@ -268,13 +268,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp MCLK'
@@ -311,13 +311,13 @@ layers:
   - {t: ▽, type: trans}
   - SLOW
   - FAST
-  - {t: ▽, type: trans}
+  - {t: SCROLL, h: toggle}
   - Sft+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - TAB
   - {t: ▽, type: trans}
-  - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
