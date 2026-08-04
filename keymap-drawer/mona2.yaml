@@ -605,8 +605,6 @@ layers:
 combos:
 - p: [39, 38]
   k: {t: ESC, h: UTILITY}
-- p: [11, 12]
-  k: TAB
 - p: [21, 22]
   k: LCTRL
   l: [MAC, NUMBER]
@@ -619,3 +617,6 @@ combos:
 - p: [21, 22, 23]
   k: Sft+LEFT ALT
   l: [WIN, WIN_FIX]
+- p: [4, 14]
+  k: ''
+  l: [MAC, WIN]
