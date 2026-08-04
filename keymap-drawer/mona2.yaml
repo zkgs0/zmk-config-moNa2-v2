@@ -622,4 +622,4 @@ combos:
   l: [MAC, WIN]
 - p: [11, 10]
   k: '&caps_word'
-  l: [NUMBER]
+  l: [NUMBER, WIN_FIX]
