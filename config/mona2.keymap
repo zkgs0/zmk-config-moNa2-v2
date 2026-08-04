@@ -86,6 +86,14 @@
             layers = <0 1>;
             slow-release;    // 両方離すまでレイヤー維持
         };
+
+        // Y+H(右手人差し指の縦ペア)でSCROLL(7)をトグル。左手T+G/G+Bと対称配置。
+        // ベース/AML(6)中/SCROLL(7)中のどこからでも発動し、6⇄7の行き来を担う
+        scroll_toggle {
+            bindings = <&tog 7>;
+            key-positions = <5 16>;
+            layers = <0 1 6 7>;
+        };
     };
 
     conditional_layers {
@@ -503,7 +511,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &tog 7
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                   &trans
@@ -514,7 +522,7 @@
 
         SCROLL {
             bindings = <
-&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &tog 7
+&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
 &kp LS(TAB)  &trans    &trans    &kp TAB  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &none   &trans                          &trans
