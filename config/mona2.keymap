@@ -56,14 +56,14 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <21 22 23>;
             layers = <0 3>;
-            timeout-ms = <100>;    // 50(デフォルト)は3本指にはシビア。250まで広げるとZ+X→Cのロール(Ctrl+C等)がShift+Ctrlに化けるため100で妥協
+            timeout-ms = <250>;    // zx側と統一。Ctrl+Cは独立Ctrlキーを使う運用のためロール誤変換の懸念なし
         };
 
         zxc_mod_win {
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <21 22 23>;
             layers = <1 13>;
-            timeout-ms = <100>;    // 同上
+            timeout-ms = <250>;    // 同上
         };
 
         esc_t_g {
