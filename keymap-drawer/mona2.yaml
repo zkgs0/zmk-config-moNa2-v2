@@ -268,7 +268,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,7 +311,7 @@ layers:
   - {t: ▽, type: trans}
   - SLOW
   - FAST
-  - {t: SCROLL, h: toggle}
+  - {t: ▽, type: trans}
   - Sft+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -626,3 +626,6 @@ combos:
 - p: [14, 25]
   k: CODE
   l: [MAC, WIN]
+- p: [5, 16]
+  k: {t: SCROLL, h: toggle}
+  l: [MAC, WIN, MOUSE, SCROLL]
