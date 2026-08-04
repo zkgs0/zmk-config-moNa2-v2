@@ -33,11 +33,6 @@
             key-positions = <39 38>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
         // ── Z+X系コンボのOS分岐 ──
         // 同一key-positionsにレイヤー排他の2枚を重ねる: 同じ指の動きでMAC=Ctrl / WIN=Alt。
         // コンボは「押した瞬間の最上位アクティブレイヤー」で判定されるため、
@@ -67,6 +62,12 @@
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <21 22 23>;
             layers = <1 13>;
+        };
+
+        esc_t_g {
+            bindings = <&none>;
+            key-positions = <4 14>;
+            layers = <0 1>;
         };
     };
 
