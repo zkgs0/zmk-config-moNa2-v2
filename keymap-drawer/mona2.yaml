@@ -35,8 +35,8 @@ layers:
   - .
   - RCTRL
   - LALT
-  - LEFT WIN
   - LCTRL
+  - {t: ESC, h: '&m_esc2'}
   - LEFT GUI
   - NUMBER
   - {t: SPACE, h: LEFT SHIFT}
@@ -79,7 +79,7 @@ layers:
   - RCTRL
   - LALT
   - LEFT WIN
-  - LCTRL
+  - {t: ESC, h: '&m_esc2'}
   - LEFT CONTROL
   - NUMBER
   - {t: SPACE, h: LEFT SHIFT}
@@ -151,7 +151,7 @@ layers:
   - '5'
   - '6'
   - KP SLASH
-  - '&caps_word'
+  - {t: ESC, h: '&m_esc2'}
   - {t: Ctl+PAGE UP, h: LEFT SHIFT}
   - '&td_pipe'
   - Sft+Gui+V
@@ -618,5 +618,5 @@ combos:
   k: Sft+LEFT ALT
   l: [WIN, WIN_FIX]
 - p: [4, 14]
-  k: ''
+  k: ESC
   l: [MAC, WIN]
