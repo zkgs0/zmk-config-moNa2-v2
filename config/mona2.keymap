@@ -78,8 +78,8 @@
             layers = <3 13>;    // 13=WIN_FIX: WINでNUMBER押下中は13が最上位になるため必須
         };
 
-        // G+B(左手人差し指の縦ペア)同時押しでSPARE1へ。esc_t_g(T+G)の1段下版
-        spare1_layer {
+        // G+B(左手人差し指の縦ペア)同時押しでCODEレイヤーへ。esc_t_g(T+G)の1段下版
+        code_layer {
             bindings = <&mo 11>;
             key-positions = <14 25>;
             layers = <0 1>;
@@ -549,7 +549,7 @@
             >;
         };
 
-        SPARE1 {
+        CODE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &m_eq
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &td_eq
