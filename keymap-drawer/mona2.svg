@@ -938,6 +938,10 @@ path.combo {
 <tspan x="84" dy="-0.6em">Sft+</tspan><tspan x="84" dy="1.2em">LCTRL</tspan>
 </text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
+<text x="56" y="84" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-FUNCTION">
