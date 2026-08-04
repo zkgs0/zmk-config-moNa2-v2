@@ -558,7 +558,7 @@
             >;
         };
 
-        SPARE2 {
+        SPARE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
