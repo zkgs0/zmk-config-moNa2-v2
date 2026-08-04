@@ -78,13 +78,11 @@
             layers = <3 13>;    // 13=WIN_FIX: WINでNUMBER押下中は13が最上位になるため必須
         };
 
-        // NUMBER親指(37)+GUI/Ctrl親指(36)の同時押しでSPARE1へ。
-        // 逐次押し(NUMBERを先に長く押してから36)はNUMBERレイヤー側の&mo 11が受ける2経路構成
+        // G+B(左手人差し指の縦ペア)同時押しでSPARE1へ。esc_t_g(T+G)の1段下版
         spare1_layer {
             bindings = <&mo 11>;
-            key-positions = <36 37>;
+            key-positions = <14 25>;
             layers = <0 1>;
-            timeout-ms = <100>;
             slow-release;    // 両方離すまでレイヤー維持
         };
     };
@@ -474,7 +472,7 @@
 &kp CAPS        &td_lt                         &td_gt     &mt LANGUAGE_1 LANGUAGE_2  &mt LC(ENTER) LS(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
 &kp BACKSPACE   &kp DOT                        &kp COMMA  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
 &ht_esc 0 ESC   &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe   &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
-&kp LEFT_SHIFT  &trans                         &trans     &mo 11                     &trans                   &trans    &trans  &mo 4                                                   &trans
+&kp LEFT_SHIFT  &trans                         &trans     &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
