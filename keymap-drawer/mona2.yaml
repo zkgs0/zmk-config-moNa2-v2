@@ -194,12 +194,12 @@ layers:
   - F9
   - F10
   - F11
-  - {t: ▽, type: trans}
+  - Ctl+Sft+ESC
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
   - Gui+Sft+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+ESC
+  - Ctl+Alt+DEL
   - F12
   - HOME
   - PAGE DOWN
