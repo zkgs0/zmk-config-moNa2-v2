@@ -271,13 +271,12 @@
             wait-ms = <10>;
             tap-ms = <10>;
 
-            // Ctrl+Shift押下 → Fタップ → Ctrl+Shift解放 → 200ms → Ctrl+Shift+Q
+            // Ctrl+Shift+Fタップ → 250ms → Ctrl+Shift+Qタップ
+            // (ディレイ200→250: ショートカットの反応待ち)
 
             bindings =
-                <&macro_press &kp LCTRL &kp LSHFT>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LCTRL &kp LSHFT>,
-                <&macro_wait_time 200>,
+                <&macro_tap &kp LC(LS(F))>,
+                <&macro_wait_time 250>,
                 <&macro_tap &kp LC(LS(Q))>;
         };
 
