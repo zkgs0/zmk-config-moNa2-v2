@@ -263,6 +263,24 @@
             bindings = <&macro_wait_time 150>, <&kp ENTER &kp DOWN &kp ENTER>;
         };
 
+        // ── MACROレイヤー用マクロ (m_mcrN連番) ──
+
+        m_mcr1: m_mcr1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+
+            // Ctrl+Shift押下 → Fタップ → Ctrl+Shift解放 → 200ms → Ctrl+Shift+Q
+
+            bindings =
+                <&macro_press &kp LCTRL &kp LSHFT>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LCTRL &kp LSHFT>,
+                <&macro_wait_time 200>,
+                <&macro_tap &kp LC(LS(Q))>;
+        };
+
         // ── シークレット定型文 (中身はローカルのsecrets.dtsi側。CIビルドでは何もしない) ──
 
         m_sec1: m_sec1 {
@@ -495,7 +513,7 @@
             bindings = <
 &kp CAPS        &td_lt                         &td_gt     &mt LANGUAGE_1 LANGUAGE_2  &mt LC(ENTER) LS(ENTER)                    &kp KP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
 &kp BACKSPACE   &kp DOT                        &kp COMMA  &kp LS(SPACE)              &kp KP_ENTER                       &trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&ht_esc 0 ESC   &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe   &kp LS(LG(V))              &kp DEL                  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
+&ht_esc 0 ESC   &ht_kp LEFT_SHIFT RC(PAGE_UP)  &td_pipe   &kp LS(LG(V))              &kp DEL                  &tog 12   &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION
 &kp LEFT_SHIFT  &trans                         &trans     &trans                     &trans                   &trans    &trans  &mo 4                                                   &trans
             >;
 
@@ -582,12 +600,12 @@
             >;
         };
 
-        SPARE {
+        MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans    &trans  &trans                     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &tog 12    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_mcr1   &trans  &trans  &trans     &trans  &trans                          &trans
             >;
         };
 
