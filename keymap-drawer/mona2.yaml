@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYMBOL}
-  - LEFT ALT
+  - '&td_alt'
   WIN:
   - Q
   - W
@@ -85,7 +85,7 @@ layers:
   - {t: SPACE, h: LEFT SHIFT}
   - ENTER
   - {t: BACKSPACE, h: SYMBOL}
-  - LEFT ALT
+  - '&td_alt'
   SYMBOL:
   - Sft+1
   - Sft+2
