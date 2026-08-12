@@ -472,14 +472,14 @@
             bindings = <&kp>, <&none>;
         };
 
-        // 41番(右端下)用: タップ=LShift+Space / ホールド=Alt / 2回タップ=無効 / タップ+ホールド=LCtrl+Alt
+        // 41番(右端下)用: タップ=Cmd+Space / ホールド=Alt / 2回タップ=無効 / タップ+ホールド=LCtrl+Alt
         // td_gtと同じ「タップダンス×ホールドタップ」入れ子パターン
 
         td_alt: td_alt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ht_kp LALT LS(SPACE)>, <&ht_hold_kp LC(LALT) 0>;
+            bindings = <&ht_kp LALT LG(SPACE)>, <&ht_hold_kp LC(LALT) 0>;
         };
 
         // TD9: タップ=" == " / 2回タップ=" != "
