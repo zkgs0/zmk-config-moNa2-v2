@@ -110,6 +110,8 @@
 &zip_temp_layer {
     excluded-positions = <11 12 13 17 18 19>;
     require-prior-idle-ms = <300>;    // 打鍵後300msはAML入りを抑止 (ケース変更後、打鍵振動によるボール微動での誤入場対策 2026-08-16)
+    require-min-distance = <60>;      // 累積移動量60カウント(800CPIで約2mm)未満ではAMLに入らない (local-fixes拡張 2026-08-17)
+    distance-window-ms = <300>;       // 累積のリセット窓。窓内に閾値を超えた「意図的な動き」だけが発動する
 };
 
 // ジェスチャ用プロセッサ：GESTUREレイヤー(8)中のボール移動をキー入力に変換
