@@ -563,8 +563,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &mkp MB4  &mkp MB5   &trans     &trans                    &trans  &trans     &trans     &trans     &trans
+&trans  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans            &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                   &trans
             >;
