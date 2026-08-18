@@ -47,6 +47,22 @@ static void idle_input_cb(struct input_event *evt) {
 }
 INPUT_CALLBACK_DEFINE(NULL, idle_input_cb);
 
+/* SCROLLレイヤー上で「役割を持つ」キーポジション。これ以外のキーを押すと
+ * AMLと同様に即ベースレイヤーへ復帰する(押したキー自体はtrans経由でベースの
+ * 文字として入力される)。keymapのSCROLLレイヤーと同期して保守すること。
+ * 1/2/4 = m_vial1/2/3, 7/8 = 速度ホールド(mo 10/9), 10 = Shift+Tab, 13 = Tab,
+ * 39 = 無効化済みEnter(&none, 誤爆防止のため退場もさせない) */
+static const uint16_t scroll_keep_positions[] = {1, 2, 4, 7, 8, 10, 13, 39};
+
+static bool scroll_position_keeps_layer(uint32_t position) {
+    for (size_t i = 0; i < ARRAY_SIZE(scroll_keep_positions); i++) {
+        if (scroll_keep_positions[i] == position) {
+            return true;
+        }
+    }
+    return false;
+}
+
 static int idle_event_listener(const zmk_event_t *eh) {
     const struct zmk_layer_state_changed *lev = as_zmk_layer_state_changed(eh);
     if (lev != NULL) {
@@ -60,7 +76,16 @@ static int idle_event_listener(const zmk_event_t *eh) {
         return ZMK_EV_EVENT_BUBBLE;
     }
 
-    /* position (両手のキー押下) / sensor (エンコーダー) はここに来る */
+    /* キー押下: 役割なしキーならAML同様に即復帰。このリスナーはkeymapの後に
+     * 走るため、押したキーはSCROLL上(trans)で解決されてから復帰する */
+    const struct zmk_position_state_changed *pev = as_zmk_position_state_changed(eh);
+    if (pev != NULL && pev->state && zmk_keymap_layer_active(IDLE_LAYER) &&
+        !scroll_position_keeps_layer(pev->position)) {
+        zmk_keymap_layer_deactivate(IDLE_LAYER);
+        return ZMK_EV_EVENT_BUBBLE;
+    }
+
+    /* 役割ありキーの押下 / sensor (エンコーダー) はタイマー延命 */
     idle_refresh();
     return ZMK_EV_EVENT_BUBBLE;
 }
