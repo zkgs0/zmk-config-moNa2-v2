@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - {t: ESC, h: '&m_esc2'}
+  - TAB
   - {t: ▽, type: trans}
   - N
   - M
@@ -70,7 +70,7 @@ layers:
   - C
   - V
   - B
-  - {t: ESCAPE, h: '&m_esc2'}
+  - TAB
   - {t: ▽, type: trans}
   - N
   - M
