@@ -255,7 +255,7 @@
         };
 
         // 旧m_vial3を拡張 (2026-09-11): 末尾に Tab, Tab を追加
-        // Enter →150ms→ Down →150ms→ Enter →150ms→ Tab →100ms→ Tab →150ms
+        // Enter →150ms→ Down →150ms→ Enter →150ms→ Tab →100ms→ Tab →100ms→ Tab →150ms
         // (macro_wait_timeは「直後のタップの後に待つ時間」を設定する)
 
         DEL_HIS: DEL_HIS {
@@ -266,7 +266,7 @@
                 <&macro_wait_time 150>,
                 <&kp ENTER &kp DOWN &kp ENTER>,
                 <&macro_wait_time 100>,
-                <&kp TAB>,
+                <&kp TAB &kp TAB>,
                 <&macro_wait_time 150>,
                 <&kp TAB>;
         };
