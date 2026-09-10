@@ -50,7 +50,7 @@ INPUT_CALLBACK_DEFINE(NULL, idle_input_cb);
 /* SCROLLレイヤー上で「役割を持つ」キーポジション。これ以外のキーを押すと
  * AMLと同様に即ベースレイヤーへ復帰する(押したキー自体はtrans経由でベースの
  * 文字として入力される)。keymapのSCROLLレイヤーと同期して保守すること。
- * 1/2/4 = m_vial1/2/3, 7/8 = 速度ホールド(mo 10/9), 10 = Shift+Tab, 13 = Tab,
+ * 1/2 = m_vial1/2, 4 = DEL_HIS, 7/8 = 速度ホールド(mo 10/9), 10 = Shift+Tab, 13 = Tab,
  * 39 = 無効化済みEnter(&none, 誤爆防止のため退場もさせない) */
 static const uint16_t scroll_keep_positions[] = {1, 2, 4, 7, 8, 10, 13, 39};
 

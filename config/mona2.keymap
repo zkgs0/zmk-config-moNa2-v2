@@ -254,14 +254,21 @@
                 <&kp TAB &kp TAB>;
         };
 
-        m_vial3: m_vial3 {
+        // 旧m_vial3を拡張 (2026-09-11): 末尾に Tab, Tab を追加
+        // Enter →150ms→ Down →150ms→ Enter →150ms→ Tab →100ms→ Tab →150ms
+        // (macro_wait_timeは「直後のタップの後に待つ時間」を設定する)
+
+        DEL_HIS: DEL_HIS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <10>;
-
-            // Enter →150ms→ Down →150ms→ Enter (全間隔150ms)
-
-            bindings = <&macro_wait_time 150>, <&kp ENTER &kp DOWN &kp ENTER>;
+            bindings =
+                <&macro_wait_time 150>,
+                <&kp ENTER &kp DOWN &kp ENTER>,
+                <&macro_wait_time 100>,
+                <&kp TAB>,
+                <&macro_wait_time 150>,
+                <&kp TAB>;
         };
 
         // ── MACROレイヤー用マクロ (m_mcrN連番) ──
@@ -577,7 +584,7 @@
 
         SCROLL {
             bindings = <
-&trans       &m_vial1  &m_vial2  &trans   &m_vial3                    &trans  &trans  &mo 10  &mo 9   &trans
+&trans       &m_vial1  &m_vial2  &trans   &DEL_HIS                    &trans  &trans  &mo 10  &mo 9   &trans
 &kp LS(TAB)  &trans    &trans    &kp TAB  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans    &trans    &trans   &trans    &trans    &none   &trans                          &trans
